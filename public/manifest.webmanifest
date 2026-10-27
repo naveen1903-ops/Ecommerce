@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "ShopEase Shopping and Food Ordering",
+  "short_name": "ShopEase",
+  "description": "A sample shopping and food-ordering app for coursework demonstrations.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7f8fc",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Food ordering", "short_name": "Food", "url": "./food-demo", "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "API store", "short_name": "Store", "url": "./api-products", "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}

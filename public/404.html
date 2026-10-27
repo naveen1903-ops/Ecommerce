@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loading ShopEase…</title>
+    <script>
+      // GitHub Pages does not provide a native SPA history fallback. The workflow
+      // replaces this placeholder with the repository base path at build time.
+      const basePath = '__GH_BASE_PATH__';
+      if (basePath.startsWith('__')) {
+        window.location.replace('/');
+      } else {
+        const pathname = window.location.pathname;
+        const route = pathname.startsWith(basePath)
+          ? pathname.slice(Math.max(0, basePath.length - 1))
+          : pathname;
+        const internalRoute = route.startsWith('/') && !route.startsWith('//') ? route : '/';
+        const redirect = internalRoute + window.location.search + window.location.hash;
+        window.location.replace(basePath + '?p=' + encodeURIComponent(redirect));
+      }
+    </script>
+  </head>
+  <body><p>Opening ShopEase…</p></body>
+</html>
